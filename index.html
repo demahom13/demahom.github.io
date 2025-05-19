@@ -1,166 +1,153 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DemahoM StorE - Coming Soon</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            background-color: #000000; /* Pitch black background */
-            color: #f0f0f0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DemahoM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .logo-container {
-            margin-bottom: 05px;
-        }
+    body {
+      min-height: 100vh;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
 
-        .logo {
-            max-width: 200px;
-            height: auto;
-        }
+    .logo {
+      margin-top: 30px;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
+    .logo img {
+      max-width: 300px;
+      height: auto;
+    }
 
-        p.tagline {
-            font-size: 1.2em;
-            color: #cccccc;
-            margin-bottom: 20px;
-        }
+    h1 {
+      margin: 15px 0;
+      font-size: 1.8em;
+    }
 
-        .explore-button {
-            background-color: #333;
-            color: #ffffff;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    .search-bar {
+      margin: 30px auto;
+      display: flex;
+      justify-content: center;
+    }
 
-        .explore-button:hover {
-            background-color: #555;
-        }
+    .search-input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #444;
+      border-radius: 5px 0 0 5px;
+      background: #222;
+      color: #fff;
+    }
 
-        .search-bar {
-            background-color: #222;
-            border-radius: 5px;
-            padding: 10px 15px;
-            display: flex;
-            align-items: center;
-            margin-top: 30px;
-            width: 80%;
-            max-width: 400px;
-        }
+    .search-button {
+      padding: 10px 20px;
+      background: #fff;
+      color: #000;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
 
-        .search-icon {
-            color: #777;
-            margin-right: 10px;
-        }
+    .app-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+    }
 
-        .search-input {
-            flex-grow: 1;
-            border: none;
-            background: transparent;
-            color: #f0f0f0;
-            font-size: 1em;
-        }
+    .app-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 15px;
+      background: #fff;
+      color: #000;
+      font-size: 1.5em;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
 
-        .search-input::placeholder {
-            color: #777;
-        }
-
-        .view-products-button {
-            background-color: transparent;
-            color: #cccccc;
-            border: 1px solid #555;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1em;
-            margin-left: 10px;
-            transition: color 0.3s ease, border-color 0.3s ease;
-        }
-
-        .view-products-button:hover {
-            color: #ffffff;
-            border-color: #ffffff;
-        }
-
-        .follow-us {
-            margin-top: 40px;
-            color: #999;
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-
-        .social-icons a {
-            color: #777;
-            font-size: 1.5em;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #cccccc;
-        }
-
-        .contact-info {
-            margin-top: 30px;
-            color: #777;
-            font-size: 0.9em;
-        }
-
-        footer {
-            margin-top: 50px;
-            font-size: 0.8em;
-            color: #555;
-        }
-    </style>
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      color: #777;
+      background: #111;
+    }
+  </style>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="IMG_9266.png" alt="DemahoM StorE Logo" class="logo"" alt="DemahoM StorE Logo" class="logo">
-    </div>
-    <h1>DemahoM </h1>
-    <p class="tagline">Welcome to DemahoM</p>
-    <a href="#" class="explore-button">Explore Now</a>
 
-    <div class="search-bar">
-        <span class="search-icon">🔍</span>
-        <input type="text" class="search-input" placeholder="Search...">
-        <a href="#" class="view-products-button">View Products</a>
-    </div>
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="nlogo.png" alt="DemahoM Logo">
+  </div>
 
-    <div class="follow-us">
-        Follow Us
-    </div>
-    <div class="social-icons">
-        <a href="https://twitter.com/demahomaly" target="_blank">🐦</a>
-        <a href="mailto:demahomyla@gmail.com" target="_blank">@</a>
-        <a href="#" target="_blank">📸</a>
-    </div>
-    <div class="contact-info">
-        <p>demahomyla@gmail.com</p <p>+9607778858<
+  <!-- Main Title -->
+  <h1>Welcome to DemahoM</h1>
 
-    <footer>
-        © 2025 DemahoM StorE. All rights reserved.
-    </footer>
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" class="search-input" placeholder="Search...">
+    <button class="search-button">Search</button>
+  </div>
+
+  <!-- App Icons Section (Fully Functional & Styled) -->
+  <div class="app-icons">
+
+    <!-- Phone Call -->
+    <a href="tel:+9607778858" style="background: #34B7F1; color: #fff;"><i class="fas fa-phone"></i></a>
+
+    <!-- Viber (Deep Link) -->
+    <a href="viber://chat?number=+9607778858" style="background: #665CAC; color: #fff;"><i class="fab fa-viber"></i></a>
+
+    <!-- Snapchat -->
+    <a href="https://snapchat.com/t/ZBet02bu" style="background: #FFFC00; color: #000;" target="_blank"><i class="fab fa-snapchat"></i></a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/1HHWApHsCH/?mibextid=wwXIfr" style="background: #1877F2; color: #fff;" target="_blank"><i class="fab fa-facebook"></i></a>
+
+    <!-- Signal (Deep Link) -->
+    <a href="https://signal.me/#p/+9607778858" style="background: #3A76F0; color: #fff;" target="_blank"><i class="fas fa-comment-dots"></i></a>
+
+    <!-- Chrome (Open Website) -->
+    <a href="https://www.demahom.store" style="background: #4285F4; color: #fff;" target="_blank"><i class="fab fa-chrome"></i></a>
+
+    <!-- Fanytel (Open SMS to Fanytel Number) -->
+    <a href="sms:+447446167887" style="background: #FF6B00; color: #fff;"><i class="fas fa-sms"></i></a>
+
+    <!-- Gmail (Mailto Link) -->
+    <a href="mailto:demahomyla@gmail.com" style="background: #D44638; color: #fff;"><i class="fas fa-envelope"></i></a>
+
+    <!-- Botim -->
+    <a href="https://botim.me/" style="background: #1BA1E2; color: #fff;" target="_blank"><i class="fas fa-comments"></i></a>
+
+    <!-- Twitter / X -->
+    <a href="https://twitter.com/demahomaly" style="background: #1DA1F2; color: #fff;" target="_blank"><i class="fab fa-twitter"></i></a>
+
+    <!-- Zangi (Website) -->
+    <a href="https://zangi.com/" style="background: #1BA1E2; color: #fff;" target="_blank"><i class="fas fa-comment"></i></a>
+
+    <!-- Telegram -->
+    <a href="https://t.me/demahomaly" style="background: #0088cc; color: #fff;" target="_blank"><i class="fab fa-telegram"></i></a>
+
+  </div>
+
+  <!-- Footer with Contact Info -->
+  <footer>
+    <p>demahomyla@gmail.com | +9607778858</p>
+    <p>&copy; 2025 DemahoM. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
